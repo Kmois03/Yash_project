@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plan</title>
+  <link rel="stylesheet" href="SelectPlan.css">
+</head>
+
+<body>
+
+  <div class="pricing-container">
+    <!-- 1 Unit Plan -->
+    <div class="plan">
+      <div class="plan-header">
+        <label><input type="radio" name="unit" onclick="togglePlan(this);updatePrice(10)"> 1 Unit</label>
+        <span>10% Off</span>
+        <div>
+          <div class="plan-price">$10.00 USD</div>
+          <div class="original-price">$24.00 USD</div>
+        </div>
+      </div>
+      <div class="plan-content">
+        <table class="dropdown-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Size</th>
+              <th>Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1#</td>
+              <td>
+                <label>
+                  <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </label>
+              </td>
+              <td>
+                <label>
+                  <select class="dropdown">
+                    <option>Red</option>
+                    <option>Black</option>
+                    <option>White</option>
+                  </select>
+                </label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Standard Price</p>
+    </div>
+    <!-- 2 Unit Plan (Most Popular) -->
+    <div class="plan">
+      <div class="most-popular">MOST POPULAR</div>
+      <div class="plan-header">
+        <label><input type="radio" name="unit" onclick="togglePlan(this);updatePrice(18)"> 2 Unit</label>
+        <span>20% Off</span>
+        <div>
+          <div class="plan-price">$18.00 USD</div>
+          <div class="original-price">$24.00 USD</div>
+        </div>
+      </div>
+      <div class="plan-content">
+        <table class="dropdown-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Size</th>
+              <th>Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1#</td>
+              <td>
+                <label>
+                  <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </label>
+              </td>
+              <td>
+                <label>
+                  <select class="dropdown">
+                    <option>Red</option>
+                    <option>Black</option>
+                    <option>White</option>
+                  </select>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>2#</td>
+              <td>
+                <label>
+                  <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </label>
+              </td>
+              <td>
+                <label>
+                  <select class="dropdown">
+                    <option>Red</option>
+                    <option>Black</option>
+                    <option>White</option>
+                  </select>
+                </label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- 3 Unit Plan -->
+    <div class="plan">
+      <div class="plan-header">
+        <label><input type="radio" name="unit" onclick="togglePlan(this);updatePrice(24)"> 3 Unit</label>
+        <span>30% Off</span>
+        <div>
+          <div class="plan-price">$24.00 USD</div>
+          <div class="original-price">$24.00 USD</div>
+        </div>
+      </div>
+      <div class="plan-content">
+        <table class="dropdown-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Size</th>
+              <th>Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1#</td>
+              <td>
+                <label>
+                  <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </label>
+              </td>
+              <td>
+                <label>
+                  <select class="dropdown">
+                    <option>Red</option>
+                    <option>Black</option>
+                    <option>White</option>
+                  </select>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>2#</td>
+              <td>
+                <label>
+                  <select class="dropdown">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </label>
+              </td>
+              <td>
+                <label>
+                  <select class="dropdown">
+                    <option>Red</option>
+                    <option>Black</option>
+                    <option>White</option>
+                  </select>
+                </label>
+              </td>
+            </tr>
+            <td>3#</td>
+            <td>
+              <label>
+                <select class="dropdown">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+              </label>
+            </td>
+            <td>
+              <label>
+                <select class="dropdown">
+                  <option>Red</option>
+                  <option>Black</option>
+                  <option>White</option>
+                </select>
+              </label>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Free Delivery</p>
+    </div>
+    <div class="summary">
+      <span>Free Delivery</span>
+      <span>Total: <span id="total-price" class="total-price">$0.00 USD</span></span>
+    </div>
+    <button class="add-to-cart">+ Add to Cart</button>
+    <div class="footer-text">© Powered by Pumper</div>
+  </div>
+
+  <script src="SelectPlan.js"> </script>
+
+</body>
+
+</html>
